@@ -4,12 +4,36 @@ using System.Windows;
 namespace WPFCustomMessageBox
 {
     /// <summary>
-    /// Interaction logic for ModalDialog.xaml
+    /// Interaction logic for CustomMessageBoxWindow.xaml
     /// </summary>
     internal partial class CustomMessageBoxWindow : Window
     {
-        #region Properties
+        #region Constructor
+        /// <summary>
+        /// Initializes a new instance of the <see cref="CustomMessageBoxWindow"/> class with the specified message,
+        /// caption, button(s), and image.
+        /// </summary>
+        /// <param name="message">The message to display in the window.</param>
+        /// <param name="caption">The caption (title) to display in the window.</param>
+        /// <param name="button">The button(s) to display in the window.</param>
+        /// <param name="image">The image to display as the icon for the window.</param>
+        internal CustomMessageBoxWindow(string message, string caption, MessageBoxButton button, MessageBoxImage image)
+        {
+            this.InitializeComponent();
 
+            this.Message = message;
+            this.Caption = caption;
+            this.Image_MessageBox.Visibility = Visibility.Collapsed;
+
+            this.DisplayImage(image);
+            this.DisplayButtons(button);
+        }
+        #endregion
+
+        #region Properties
+        /// <summary>
+        /// Gets or sets the caption (title) for this window.
+        /// </summary>
         internal string Caption
         {
             get
@@ -22,6 +46,9 @@ namespace WPFCustomMessageBox
             }
         }
 
+        /// <summary>
+        /// Gets or sets the message text for this window.
+        /// </summary>
         internal string Message
         {
             get
@@ -34,6 +61,9 @@ namespace WPFCustomMessageBox
             }
         }
 
+        /// <summary>
+        /// Gets or sets the text displayed on the "OK" button.
+        /// </summary>
         internal string OkButtonText
         {
             get
@@ -46,6 +76,9 @@ namespace WPFCustomMessageBox
             }
         }
 
+        /// <summary>
+        /// Gets or sets the text displayed on the "Cancel" button.
+        /// </summary>
         internal string CancelButtonText
         {
             get
@@ -58,6 +91,9 @@ namespace WPFCustomMessageBox
             }
         }
 
+        /// <summary>
+        /// Gets or sets the text displayed on the "Yes" button.
+        /// </summary>
         internal string YesButtonText
         {
             get
@@ -70,6 +106,9 @@ namespace WPFCustomMessageBox
             }
         }
 
+        /// <summary>
+        /// Gets or sets the text displayed on the "No" button.
+        /// </summary>
         internal string NoButtonText
         {
             get
@@ -82,28 +121,14 @@ namespace WPFCustomMessageBox
             }
         }
 
+        /// <summary>
+        /// Gets or sets the result returned by this dialog.
+        /// </summary>
         public MessageBoxResult Result { get; set; }
-
         #endregion
 
-        #region Constructor
-
-        internal CustomMessageBoxWindow(string message, string caption, MessageBoxButton button, MessageBoxImage image)
-        {
-            this.InitializeComponent();
-
-            this.Message = message;
-            this.Caption = caption;
-            this.Image_MessageBox.Visibility = Visibility.Collapsed;
-
-            this.DisplayImage(image);
-            this.DisplayButtons(button);
-        }
-
-        #endregion
 
         #region Methods
-
         private void DisplayButtons(MessageBoxButton button)
         {
             switch (button)

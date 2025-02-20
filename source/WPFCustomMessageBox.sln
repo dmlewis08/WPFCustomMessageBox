@@ -1,36 +1,31 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFCustomMessageBox", "WPFCustomMessageBox\WPFCustomMessageBox.csproj", "{ED02D418-7C0E-4E6C-99A9-BE4357122AE7}"
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFCustomMessageBox", "WPFCustomMessageBox\WPFCustomMessageBox.csproj", "{AC3637A0-B82A-4FF9-A7F1-6ADDB23608DB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomMessageBox Demo", "CustomMessageBoxDemo\CustomMessageBox Demo.csproj", "{BEB8F894-9C79-4D30-8061-C5570C1B159D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomMessageBoxDemo", "CustomMessageBoxDemo\CustomMessageBoxDemo.csproj", "{FFA9E69D-A8C0-4331-AAB4-36B160470919}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
-		Debug|x86 = Debug|x86
 		Release|Any CPU = Release|Any CPU
-		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{ED02D418-7C0E-4E6C-99A9-BE4357122AE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{ED02D418-7C0E-4E6C-99A9-BE4357122AE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{ED02D418-7C0E-4E6C-99A9-BE4357122AE7}.Debug|x86.ActiveCfg = Debug|x86
-		{ED02D418-7C0E-4E6C-99A9-BE4357122AE7}.Debug|x86.Build.0 = Debug|x86
-		{ED02D418-7C0E-4E6C-99A9-BE4357122AE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{ED02D418-7C0E-4E6C-99A9-BE4357122AE7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{ED02D418-7C0E-4E6C-99A9-BE4357122AE7}.Release|x86.ActiveCfg = Release|x86
-		{ED02D418-7C0E-4E6C-99A9-BE4357122AE7}.Release|x86.Build.0 = Release|x86
-		{BEB8F894-9C79-4D30-8061-C5570C1B159D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BEB8F894-9C79-4D30-8061-C5570C1B159D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BEB8F894-9C79-4D30-8061-C5570C1B159D}.Debug|x86.ActiveCfg = Debug|x86
-		{BEB8F894-9C79-4D30-8061-C5570C1B159D}.Debug|x86.Build.0 = Debug|x86
-		{BEB8F894-9C79-4D30-8061-C5570C1B159D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BEB8F894-9C79-4D30-8061-C5570C1B159D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BEB8F894-9C79-4D30-8061-C5570C1B159D}.Release|x86.ActiveCfg = Release|x86
-		{BEB8F894-9C79-4D30-8061-C5570C1B159D}.Release|x86.Build.0 = Release|x86
+		{AC3637A0-B82A-4FF9-A7F1-6ADDB23608DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC3637A0-B82A-4FF9-A7F1-6ADDB23608DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC3637A0-B82A-4FF9-A7F1-6ADDB23608DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC3637A0-B82A-4FF9-A7F1-6ADDB23608DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFA9E69D-A8C0-4331-AAB4-36B160470919}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFA9E69D-A8C0-4331-AAB4-36B160470919}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFA9E69D-A8C0-4331-AAB4-36B160470919}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFA9E69D-A8C0-4331-AAB4-36B160470919}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B21DF930-8C1A-4B4E-95CC-3E7A45A6EB3D}
 	EndGlobalSection
 EndGlobal
