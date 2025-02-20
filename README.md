@@ -1,5 +1,6 @@
 WPFCustomMessageBox
 =====================
+NOTE: Updated for .NET Core version 8.0 as of 2/20/2025
 
 *WPFCustomMessageBox* is a WPF clone of the native Windows/.NET MessageBox with extra features like custom button text.
 
