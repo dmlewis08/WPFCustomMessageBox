@@ -12,7 +12,7 @@ namespace CustomMessageBoxDemo
     {
         public MainWindow()
         {
-            InitializeComponent();            
+            InitializeComponent();
         }
 
         private void button_StandardMessage_Click(object sender, RoutedEventArgs e)
@@ -61,7 +61,7 @@ namespace CustomMessageBoxDemo
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            
+
         }
 
         private void button1_Click(object sender, RoutedEventArgs e)
